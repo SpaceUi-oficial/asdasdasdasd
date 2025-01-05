@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    padding: 40px;
+    background-color: #121212; /* Color de fondo ajustado */
+    min-height: 100vh; /* Altura mínima de 100vh */
+    color: #ffffff; /* Color de texto en blanco para mayor contraste */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .cards-page {
+    display: flex;
+    justify-content: center;
+  }
+  /* Social section styles */
+  .social-section {
+    text-align: center;
+    margin-top: 50px; /* Ajusta el margen superior */
+    color: white; /* Color del texto */
+  }
+  
+  .blueprint-title {
+    font-size: 36px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+  }
+  
+  .social-text {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    margin-bottom: 20px; /* Espaciado debajo del texto */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaciado entre iconos */
+  }
+  
+  .icon {
+    width: 40px; /* Ajusta el tamaño del icono */
+    height: 40px; /* Ajusta el tamaño del icono */
+    fill: white; /* Color del icono */
+    transition: fill 0.3s ease; /* Transición suave para hover */
+  }
+  
+  .social-icons a:hover .icon {
+    fill: #ff8f00; /* Color al pasar el mouse (naranja) */
+  }
+  
+  .containerTitle {
+    grid-column: span 3; /* El título ocupa tres columnas */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .main-title {
+    color: #ccc;
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 1.5em;
+    margin: 0;
+    color: #a9a9a9;
+  }
+
+  /* Fondo de la tarjeta actualizado */
+  .card {
+    background-color: #1d1d1d; /* Mismo color que los inputs */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff; /* Texto blanco para contraste */
+    margin: 0px auto;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f97316; /* Color anaranjado para el título */
+  }
+  
+
+  .contact-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas para pantallas grandes */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0px auto;
+    
+  }
+  
+  .card,
+  .contact-form,
+  .map {
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    color: #f97316; /* Color del título */
+  }
+  
+  /* Estilos para los inputs */
+  .input-field {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 0.8rem;
+    width: 90%;
+    margin-bottom: 1.5rem;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Botón de envío */
+  .submit-btn {
+    background-color: #f97316;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .contact-card {
+        display: block;
+        gap: 10px;
+    }
+      
+  /* Estilos para los inputs */
+  .input-field {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 0.8rem;
+    width: 80%;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+
+  }
+  
+  
+  .map {
+    grid-column: span 2;
+    margin-top: 20px;
+  }
+  
